@@ -28,7 +28,8 @@
                     <label for="city">City</label>
                     <input type="text" id="city" name="city">
                     <label for="state">State</label>
-                      <select name="state">
+                    <input name="state" list="state-list">
+                      <datalist id="state-list">
                             <option value=""></option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -79,7 +80,7 @@
                             <option value="WI">Wisconsin</option>
                             <option value="WV">West Virginia</option>
                             <option value="WY">Wyoming</option>
-                        </select>
+                            </datalist>
                     <label for="zip code">Zip Code</label>
                     <input type="text" id="zip code" name="zip code">
                 </fieldset>
@@ -93,7 +94,7 @@
                     </div>
                     <div>
                         <input type="radio" id="London" name="location" value="London"> 
-                        <label for="London">Japan</label>
+                        <label for="London">London</label>
                     </div>
                     <div>
                         <input type="radio" id="Japan" name="location" value="Japan"> 
@@ -101,7 +102,7 @@
                     </div>
                     <div>
                         <input type="radio" id="Mexico" name="location" value="Mexico"> 
-                        <label for="Mexico">New Zealand</label>
+                        <label for="Mexico">Mexico</label>
                     </div>
                 </fieldset>       
                 <fieldset>
@@ -118,11 +119,11 @@
                         <label for="Limo">Limo</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Yacht" name="Ameneties" value="Yacht" checked> 
+                        <input type="checkbox" id="Yacht" name="Ameneties" value="Yacht"> 
                         <label for="Yacht">Yacht</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="Helicopter" name="Ameneties" value="Helicopter" checked> 
+                        <input type="checkbox" id="Helicopter" name="Ameneties" value="Helicopter"> 
                         <label for="Helicopter">Helicopter</label>
                     </div>
                 </fieldset>       
