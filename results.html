@@ -30,10 +30,10 @@
         let name = `${urlParams.get('firstname')} ${urlParams.get('lastname')}`
         let choice = urlParams.get('location') 
         let color = urlParams.get('color') 
-        let extras = urlParams.getAll('extras')
+        let extras = urlParams.getAll('Ameneties')
         let email = urlParams.get('email') 
         let address = urlParams.get('address') 
-        let cityStateZip = `${urlParams.get('city')}, ${urlParams.get('state')} ${urlParams.get('zip')}`
+        let cityStateZip = `${urlParams.get('city')}, ${urlParams.get('state')} ${urlParams.get('zip code')}`
         let emailMessage = document.createElement('p')
         
         // Fill the page with the user's personal information
@@ -44,13 +44,13 @@
         document.getElementById('address2').textContent = cityStateZip
 
         // Put the image of the chosen vacation destination
-        if (choice == 'Japan') {
+        if (choice == 'France') {
             document.querySelector('.mini-image').src = 'assets/images/japan.jpg'
         }
-        else if (choice == 'New Zealand') {
+        else if (choice == 'Japan') {
             document.querySelector('.mini-image').src = 'assets/images/new-zealand.jpg'
         }
-        else if (choice == 'Reykjavik') {
+        else if (choice == 'London') {
             document.querySelector('.mini-image').src = 'assets/images/iceland.jpg'
         }
 
